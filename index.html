@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PKBM Madinatuttauhid</title>
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <!-- CSS  -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -27,10 +27,14 @@
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"
-          ><img src="logo-pkbm.png"
+          ><img src="/images/logo-pkbm.png"
         /></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Sekolah</a></li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Sekolah<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
           <li><a href="#">LPBA</a></li>
           <li><a href="#">TPQ</a></li>
           <li><a href="#">Kontak</a></li>
@@ -38,9 +42,22 @@
             <a href="#"><i class="material-icons">home</i></a>
           </li>
         </ul>
-
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">TK</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">SD</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">SMP</a></li>
+        </ul>
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Navbar Link</a></li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Sekolah<i class="material-icons right">chevron_right</i></a
+            >
+          </li>
+          <li><a href="#">LPBA</a></li>
+          <li><a href="#">TPQ</a></li>
+          <li><a href="#">Kontak</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
@@ -60,19 +77,11 @@
               PKBM & Tahfidzul Qur'an Kota Palembang
             </h5>
           </div>
-          <div class="row center">
-            <a
-              href=""
-              id="download-button"
-              class="btn-large waves-effect waves-light teal lighten-1"
-              >MULAI</a
-            >
-          </div>
           <br /><br />
         </div>
       </div>
       <div class="parallax">
-        <img src="background1.jpg" alt="Unsplashed background img 1" />
+        <img src="/images/background1.jpg" alt="Unsplashed background img 1" />
       </div>
     </div>
 
@@ -92,6 +101,14 @@
                 Dasar (SD), dan Sekolah Menengah Pertama (SMP).
               </p>
             </div>
+            <div class="row center">
+              <a
+                href="#"
+                id="download-button"
+                class="btn-small waves-effect waves-light teal lighten-1"
+                >Selengkapnya...</a
+              >
+            </div>
           </div>
 
           <div class="col s12 m4">
@@ -106,6 +123,14 @@
                 kalangan dan usia.
               </p>
             </div>
+            <div class="row center">
+              <a
+                href="#"
+                id="download-button"
+                class="btn-small waves-effect waves-light teal lighten-1"
+                >Selengkapnya...</a
+              >
+            </div>
           </div>
 
           <div class="col s12 m4">
@@ -119,6 +144,14 @@
                 Taman Pendidikan Al-Qur'an dan program tahfidz untuk anak-anak.
               </p>
             </div>
+          </div>
+          <div class="row center">
+            <a
+              href="#"
+              id="download-button"
+              class="btn-small waves-effect waves-light teal lighten-1"
+              >Selengkapnya...</a
+            >
           </div>
         </div>
       </div>
@@ -136,7 +169,7 @@
         </div>
       </div>
       <div class="parallax">
-        <img src="background2.jpg" alt="Unsplashed background img 2" />
+        <img src="/images/background2.jpg" alt="Unsplashed background img 2" />
       </div>
     </div>
 
@@ -146,7 +179,7 @@
           <div class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
             <h4>Kontak kami</h4>
-            <p class="left-align light">
+            <p class="center-align light">
               Masjid At-Tauhid, Jl. Pangeran Ario Kesumo Abdurrohim No. 326,
               Kel. Talang Semut, Kec. Bukit Kecil, Palembang 30135.
             </p>
@@ -166,7 +199,7 @@
         </div>
       </div>
       <div class="parallax">
-        <img src="background3.jpg" alt="Unsplashed background img 3" />
+        <img src="/images/background3.jpg" alt="Unsplashed background img 3" />
       </div>
     </div>
     <div class="fixed-action-btn">
@@ -192,6 +225,13 @@
     <footer class="page-footer teal">
       <div class="container">
         <div class="row">
+          <div class="col l1 s12">
+            <img
+              src="/images/logo-pkbm-large.png"
+              height="100px"
+              class="center-align"
+            />
+          </div>
           <div class="col l6 s12">
             <h5 class="white-text">PKBM Madinatuttauhid</h5>
             <p class="grey-text text-lighten-4">
@@ -202,15 +242,21 @@
             </p>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Link</h5>
+            <h5 class="white-text">Tautan</h5>
             <ul>
               <li>
-                <a class="white-text" href="#!">TK, SD, SMP Madinatuttauhid</a>
+                <a class="white-text" href="#!"
+                  ><u>TK, SD, SMP Madinatuttauhid</u></a
+                >
               </li>
               <li>
-                <a class="white-text" href="#!">LPBA Takhassus Darussalam</a>
+                <a class="white-text" href="#!"
+                  ><u>LPBA Takhassus Darussalam</u></a
+                >
               </li>
-              <li><a class="white-text" href="#!">TPQ Madinatuttauhid</a></li>
+              <li>
+                <a class="white-text" href="#!"><u>TPQ Madinatuttauhid</u></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -221,7 +267,7 @@
             new Date().getFullYear() > 2012 &&
               document.write("©" + new Date().getFullYear());
           </script>
-          Yayasan Gema Sunnah | Made with
+          Yayasan Gema Sunnah. Made with
           <a class="brown-text text-lighten-3" href="http://materializecss.com"
             >Materialize</a
           >
